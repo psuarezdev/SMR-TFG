@@ -36,6 +36,3 @@ services:
             MYSQL_DATABASE: integracion
             MYSQL_USER: pablo
             MYSQL_PASSWORD: admin
-
-volumes:
-    db-data:
