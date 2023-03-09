@@ -25,9 +25,13 @@ services:
     web:
         image: php:7.4-apache
         restart: always
-        on:
-          - db
+        depends_on:
+            - db
         volumes:
+            - ./web:/var/www/html
+        ports:
+            - 80:80
+        environment:
             MYSQL_HOST: db
             MYSQL_DATABASE: integracion
             MYSQL_USER: pablo
