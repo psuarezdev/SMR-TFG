@@ -1,6 +1,6 @@
 sudo apt-get update -y && sudo apt-get upgrade -y
 
-sudo apt-get install nodejs npm
+sudo apt-get install nodejs npm -y
 
 cd ~
 
@@ -12,7 +12,7 @@ mkdir db_data
 
 mkdir web
 
-sudo apt-get install docker docker-compose
+sudo apt-get install docker docker-compose -y
 
 docker pull mysql:8.0
 
